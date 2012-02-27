@@ -1,0 +1,23 @@
+Name:                logfloat-unboxed
+Version:             0.1
+Synopsis:            Unboxed vector instance for logfloats
+Homepage:            https://github.com/bgamari/logfloat-unboxed
+License:             BSD3
+License-file:        LICENSE
+Description:         Provides Data.Vector.Unboxe
+Author:              Ben Gamari
+Maintainer:          bgamari.foss@gmail.com
+Category:            Math
+Build-type:          Simple
+Cabal-version:       >=1.6
+
+Source-repository head
+  Type:              git
+  Location:          https://github.com/bgamari/logfloat-unboxed
+
+Library
+  Exposed-modules:     Data.Number.LogFloat.Vector
+  Build-depends:       base == 4.*,
+                       vector == 0.*,
+                       logfloat == 0.*
+
